@@ -1,0 +1,611 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2012/2012161.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+<div class="d-flex flex-column flex-md-row align-items-center pb-0.5 mb-3 border-bottom">
+    <a href="index.html" class="d-flex align-items-center text-dark text-decoration-none">
+        <img src="https://cdn-icons-png.flaticon.com/512/8203/8203764.png" width="50" height="50" alt="" title=""
+             class="img-small">
+        <span class="m-2 fs-4 fw-bold"> Подготовка к 17 заданию ЕГЭ
+        </span>
+    </a>
+    <nav class="d-inline-flex mt-2 mt-md-3 ms-md-auto">
+        <a class="me-3 py-2 text-dark text-decoration-none" href="test.html"><h5 class="fw-bold">Тесты <img
+                src="https://cdn-icons-png.flaticon.com/512/7219/7219693.png" width="38" height="38" alt="" title=""
+                class="img-small"></h5></a>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="razdelenie.html"><h5 class="fw-bold">Основной курс
+            <img src="   https://cdn-icons-png.flaticon.com/512/5833/5833290.png " width="40" height="40" alt=""
+                 title="" class="img-small"></h5></a>
+
+        <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'profile' %}"><h5 class="fw-bold  ">{{ user }}
+            <img src="   https://cdn-icons-png.flaticon.com/512/2206/2206322.png " width="40" height="40" alt=""
+                 title="" class="img-small"></h5></a>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'logout' %}"><h5 class="fw-bold  ">Выход <img
+                src="   https://cdn-icons-png.flaticon.com/512/3177/3177407.png " width="40" height="40" alt="" title=""
+                class="img-small"></h5></a>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'login' %}"><h5 class="fw-bold  ">Вход <img
+                src="   https://cdn-icons-png.flaticon.com/512/5977/5977778.png " width="40" height="40" alt="" title=""
+                class="img-small"></h5></a>
+
+    </nav>
+</div>
+<div class="container">
+    <h1 class="text-center">Задачи с параметром</h1> <br>
+    <div class="p-2 fw-semibold">
+        <p class="fs-4">
+            Задание 1 <br>
+            Решите уравнение при всех значениях параметра a:
+
+
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mo stretchy="false">(</mo>
+                <msup>
+                    <mi>a</mi>
+                    <mn>2</mn>
+                </msup>
+                <mo>+</mo>
+                <mi>a</mi>
+                <mo stretchy="false">)</mo>
+                <mi>x</mi>
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>2</mn>
+                <msup>
+                    <mi>a</mi>
+                    <mn>2</mn>
+                </msup>
+                <mo>=</mo>
+                <mn>3</mn>
+                <mi>a</mi>
+            </math>
+            Показать решение <br>
+            Данное уравнение линейного типа:
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+                <mo stretchy="false">(</mo>
+                <mi>a</mi>
+                <mo>+</mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+                <mi>x</mi>
+                <mo>=</mo>
+                <mi>a</mi>
+                <mo stretchy="false">(</mo>
+                <mn>2</mn>
+                <mi>a</mi>
+                <mo>+</mo>
+                <mn>3</mn>
+                <mo stretchy="false">)</mo>
+            </math>
+            1) Если
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+                <mo>=</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>1</mn>
+            </math>
+            , то уравнение примет вид
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mn>0</mn>
+                <mo>&#x22C5;<!-- ⋅ --></mo>
+                <mi>x</mi>
+                <mo>=</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>1</mn>
+            </math>
+            , что не имеет решений <br>
+            2) Если
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+                <mo>=</mo>
+                <mn>0</mn>
+            </math>
+            , то уравнение примет вид
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mn>0</mn>
+                <mo>&#x22C5;<!-- ⋅ --></mo>
+                <mi>x</mi>
+                <mo>=</mo>
+                <mn>0</mn>
+            </math>
+            . Решением будут
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>x</mi>
+                <mo>&#x2208;<!-- ∈ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="double-struck">R</mi>
+                </mrow>
+            </math>
+            <br>
+            3) Если
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+                <mo>&#x2260;<!-- ≠ --></mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>1</mn>
+                <mo>;</mo>
+                <mn>0</mn>
+            </math>
+            , то корнем уравнения будет
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>x</mi>
+                <mo>=</mo>
+                <mstyle displaystyle="true" scriptlevel="0">
+                    <mfrac>
+                        <mrow>
+                            <mi>a</mi>
+                            <mo stretchy="false">(</mo>
+                            <mn>2</mn>
+                            <mi>a</mi>
+                            <mo>+</mo>
+                            <mn>3</mn>
+                            <mo stretchy="false">)</mo>
+                        </mrow>
+                        <mrow>
+                            <mi>a</mi>
+                            <mo stretchy="false">(</mo>
+                            <mi>a</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                            <mo stretchy="false">)</mo>
+                        </mrow>
+                    </mfrac>
+                </mstyle>
+                <mo>=</mo>
+                <mstyle displaystyle="true" scriptlevel="0">
+                    <mfrac>
+                        <mrow>
+                            <mn>2</mn>
+                            <mi>a</mi>
+                            <mo>+</mo>
+                            <mn>3</mn>
+                        </mrow>
+                        <mrow>
+                            <mi>a</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                        </mrow>
+                    </mfrac>
+                </mstyle>
+            </math>
+            <br> Ответ
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+                <mo>=</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>1</mn>
+                <mtext>&#xA0;</mtext>
+                <mo stretchy="false">&#x21D2;<!-- ⇒ --></mo>
+                <mtext>&#xA0;</mtext>
+                <mi>x</mi>
+                <mo>&#x2208;<!-- ∈ --></mo>
+                <mi class="MJX-variant">&#x2205;<!-- ∅ --></mi>
+            </math>
+            <br>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+                <mo>=</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>1</mn>
+                <mtext>&#xA0;</mtext>
+                <mo stretchy="false">&#x21D2;<!-- ⇒ --></mo>
+                <mtext>&#xA0;</mtext>
+                <mi>x</mi>
+                <mo>&#x2208;<!-- ∈ --></mo>
+                <mi class="MJX-variant">&#x2205;<!-- ∅ --></mi>
+            </math>
+            <br>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+                <mo>&#x2260;<!-- ≠ --></mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>1</mn>
+                <mo>;</mo>
+                <mn>0</mn>
+                <mtext>&#xA0;</mtext>
+                <mo stretchy="false">&#x21D2;<!-- ⇒ --></mo>
+                <mtext>&#xA0;</mtext>
+                <mi>x</mi>
+                <mo>=</mo>
+                <mfrac>
+                    <mrow>
+                        <mn>2</mn>
+                        <mi>a</mi>
+                        <mo>+</mo>
+                        <mn>3</mn>
+                    </mrow>
+                    <mrow>
+                        <mi>a</mi>
+                        <mo>+</mo>
+                        <mn>1</mn>
+                    </mrow>
+                </mfrac>
+            </math>
+            <br>
+
+            Задание 2: <br>
+            Решите уравнение при всех значениях параметра a:
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mstyle displaystyle="true" scriptlevel="0">
+                    <mfrac>
+                        <mrow>
+                            <mi>x</mi>
+                            <mo>&#x2212;<!-- − --></mo>
+                            <mi>a</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>x</mi>
+                            <mo>&#x2212;<!-- − --></mo>
+                            <mn>1</mn>
+                        </mrow>
+                    </mfrac>
+                </mstyle>
+                <mo>=</mo>
+                <mn>0</mn>
+            </math>
+            <br>
+            Показать решение <br>
+            Данное уравнение равносильно
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mrow>
+                    <mo>{</mo>
+                    <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+                        <mtr>
+                            <mtd>
+                                <mi>x</mi>
+                                <mo>=</mo>
+                                <mi>a</mi>
+                            </mtd>
+                        </mtr>
+                        <mtr>
+                            <mtd>
+                                <mi>x</mi>
+                                <mo>&#x2260;<!-- ≠ --></mo>
+                                <mn>1</mn>
+                            </mtd>
+                        </mtr>
+                    </mtable>
+                    <mo fence="true" stretchy="true" symmetric="true"></mo>
+                </mrow>
+            </math>
+            Следовательно, если
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+                <mo>=</mo>
+                <mn>1</mn>
+            </math>
+            , то уравнение не имеет решений, если
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+                <mo>&#x2260;<!-- ≠ --></mo>
+                <mn>1</mn>
+            </math>
+            , то корнем уравнения является x = a
+            <br> Ответ:
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+                <mo>=</mo>
+                <mn>1</mn>
+                <mtext>&#xA0;</mtext>
+                <mo stretchy="false">&#x21D2;<!-- ⇒ --></mo>
+                <mtext>&#xA0;</mtext>
+                <mi>x</mi>
+                <mo>&#x2208;<!-- ∈ --></mo>
+                <mi class="MJX-variant">&#x2205;<!-- ∅ --></mi>
+            </math>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+                <mo>&#x2260;<!-- ≠ --></mo>
+                <mn>1</mn>
+                <mtext>&#xA0;</mtext>
+                <mo stretchy="false">&#x21D2;<!-- ⇒ --></mo>
+                <mtext>&#xA0;</mtext>
+                <mi>x</mi>
+                <mo>=</mo>
+                <mi>a</mi>
+            </math>
+            <br>
+            Задание 3 <br>
+            Решите уравнение
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+                <mi>x</mi>
+                <mo>+</mo>
+                <mn>3</mn>
+                <mo>=</mo>
+                <mn>0</mn>
+            </math>
+            при всех значениях
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+            </math>
+            <br>
+            Показать решение <br>
+            Уравнение можно переписать в виде
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+                <mi>x</mi>
+                <mo>=</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>3</mn>
+            </math>
+            . Рассмотрим два случая: <br>
+            1)
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+                <mo>=</mo>
+                <mn>0</mn>
+            </math>
+            В этом случае левая часть равна 0 , а правая – нет, следовательно, уравнение не имеет корней. <br>
+            2)
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+                <mo>&#x2260;<!-- ≠ --></mo>
+                <mn>0</mn>
+            </math>
+            .Тогда
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>x</mi>
+                <mo>=</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mstyle displaystyle="true" scriptlevel="0">
+                    <mfrac>
+                        <mn>3</mn>
+                        <mi>a</mi>
+                    </mfrac>
+                </mstyle>
+            </math>
+            <br>
+            Ответ:
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+                <mo>=</mo>
+                <mn>0</mn>
+                <mo stretchy="false">&#x21D2;<!-- ⇒ --></mo>
+                <mi>x</mi>
+                <mo>&#x2208;<!-- ∈ --></mo>
+                <mi class="MJX-variant">&#x2205;<!-- ∅ --></mi>
+                <mo>;</mo>
+                <mspace linebreak="newline"/>
+                <mi>a</mi>
+                <mo>&#x2260;<!-- ≠ --></mo>
+                <mn>0</mn>
+                <mo stretchy="false">&#x21D2;<!-- ⇒ --></mo>
+                <mi>x</mi>
+                <mo>=</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mstyle displaystyle="true" scriptlevel="0">
+                    <mfrac>
+                        <mn>3</mn>
+                        <mi>a</mi>
+                    </mfrac>
+                </mstyle>
+            </math>
+            <br>
+            Задание 4: <br> Решите уравнение
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+                <mi>x</mi>
+                <mo>+</mo>
+                <msup>
+                    <mi>a</mi>
+                    <mn>2</mn>
+                </msup>
+                <mo>=</mo>
+                <mn>0</mn>
+            </math>
+            при всех значениях параметра
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+            </math>
+            <br>
+            Показать решение <br> Уравнение можно переписать в виде
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+                <mi>x</mi>
+                <mo>=</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <msup>
+                    <mi>a</mi>
+                    <mn>2</mn>
+                </msup>
+            </math>
+            . Рассмотрим два случая <br>
+            1)
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+                <mo>=</mo>
+                <mn>0</mn>
+            </math>
+            . В этом случае левая и правая части равны
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mn>0</mn>
+            </math>
+            , следовательно, уравнение верно при любых значениях переменной
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>x</mi>
+            </math>
+            <br>
+            2)
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+                <mo>&#x2260;<!-- ≠ --></mo>
+                <mn>0</mn>
+            </math>
+            .Тогда
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>x</mi>
+                <mo>=</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mi>a</mi>
+            </math>
+            <br>
+            Ответ: <br>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+                <mo>=</mo>
+                <mn>0</mn>
+                <mo stretchy="false">&#x21D2;<!-- ⇒ --></mo>
+                <mi>x</mi>
+                <mo>&#x2208;<!-- ∈ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="double-struck">R</mi>
+                </mrow>
+                <mo>;</mo>
+                <mspace linebreak="newline"/>
+                <mi>a</mi>
+                <mo>&#x2260;<!-- ≠ --></mo>
+                <mn>0</mn>
+                <mo stretchy="false">&#x21D2;<!-- ⇒ --></mo>
+                <mi>x</mi>
+                <mo>=</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mi>a</mi>
+            </math>
+            <br>
+            Задание 5: <br>
+            При каких
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+            </math>
+            все решения неравенства
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>x</mi>
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>4</mn>
+                <mo>+</mo>
+                <mn>2</mn>
+                <mi>a</mi>
+                <mo>&lt;</mo>
+                <mn>0</mn>
+            </math>
+            является решениями неравенства
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mn>2</mn>
+                <mi>x</mi>
+                <mo>+</mo>
+                <mn>3</mn>
+                <mo>&#x2212;<!-- − --></mo>
+                <mi>a</mi>
+                <mo>&lt;</mo>
+                <mn>0</mn>
+            </math>
+            <br>
+            Показать решение <br>Из условия следует, что множество решений первого неравенства должно содержаться во
+            множестве решений второго неравенства. Решим оба неравенства:
+            <br>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>x</mi>
+                <mo>&lt;</mo>
+                <mn>4</mn>
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>2</mn>
+                <mi>a</mi>
+            </math>
+            и
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>x</mi>
+                <mo>&lt;</mo>
+                <mfrac>
+                    <mrow>
+                        <mi>a</mi>
+                        <mo>&#x2212;<!-- − --></mo>
+                        <mn>3</mn>
+                    </mrow>
+                    <mn>2</mn>
+                </mfrac>
+            </math>
+            . Чтобы луч
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mo stretchy="false">(</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                <mo>;</mo>
+                <mn>4</mn>
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>2</mn>
+                <mi>a</mi>
+                <mo stretchy="false">)</mo>
+            </math>
+            содержался в луче
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                        <mo>&#x2212;<!-- − --></mo>
+                        <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                        <mo>;</mo>
+                        <mfrac>
+                            <mrow>
+                                <mi>a</mi>
+                                <mo>&#x2212;<!-- − --></mo>
+                                <mn>3</mn>
+                            </mrow>
+                            <mn>2</mn>
+                        </mfrac>
+                    </mrow>
+                    <mo>)</mo>
+                </mrow>
+            </math>
+            , нужно чтобы
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mn>4</mn>
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>2</mn>
+                <mi>a</mi>
+                <mo>&#x2A7D;<!-- ⩽ --></mo>
+                <mstyle displaystyle="true" scriptlevel="0">
+                    <mfrac>
+                        <mrow>
+                            <mi>a</mi>
+                            <mo>&#x2212;<!-- − --></mo>
+                            <mn>3</mn>
+                        </mrow>
+                        <mn>2</mn>
+                    </mfrac>
+                </mstyle>
+                <mspace width="1em"/>
+                <mo stretchy="false">&#x21D2;<!-- ⇒ --></mo>
+                <mspace width="1em"/>
+                <mi>a</mi>
+                <mo>&#x2A7E;<!-- ⩾ --></mo>
+                <mstyle displaystyle="true" scriptlevel="0">
+                    <mfrac>
+                        <mn>11</mn>
+                        <mn>5</mn>
+                    </mfrac>
+                </mstyle>
+            </math>
+            <br>
+            Ответ
+            <br>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+                <mo>&#x2A7E;<!-- ⩾ --></mo>
+                <mfrac>
+                    <mn>11</mn>
+                    <mn>5</mn>
+                </mfrac>
+            </math>
+
+
+            .
+
+
+        </p>
+
+
+    </div>
+
+
+</div>
+
+
+
+

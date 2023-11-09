@@ -1,0 +1,146 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2012/2012161.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+<div class="d-flex flex-column flex-md-row align-items-center pb-0.5 mb-3 border-bottom">
+    <a href="index.html" class="d-flex align-items-center text-dark text-decoration-none">
+        <img src="https://cdn-icons-png.flaticon.com/512/8203/8203764.png" width="50" height="50" alt="" title=""
+             class="img-small">
+        <span class="m-2 fs-4 fw-bold"> Подготовка к 17 заданию ЕГЭ
+        </span>
+    </a>
+    <nav class="d-inline-flex mt-2 mt-md-3 ms-md-auto">
+        <a class="me-3 py-2 text-dark text-decoration-none" href="test.html"><h5 class="fw-bold">Тесты <img
+                src="https://cdn-icons-png.flaticon.com/512/7219/7219693.png" width="38" height="38" alt="" title=""
+                class="img-small"></h5></a>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="razdelenie.html"><h5 class="fw-bold">Основной курс
+            <img src="   https://cdn-icons-png.flaticon.com/512/5833/5833290.png " width="40" height="40" alt=""
+                 title="" class="img-small"></h5></a>
+
+        <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'profile' %}"><h5 class="fw-bold  ">{{ user }}
+            <img src="   https://cdn-icons-png.flaticon.com/512/2206/2206322.png " width="40" height="40" alt=""
+                 title="" class="img-small"></h5></a>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'logout' %}"><h5 class="fw-bold  ">Выход <img
+                src="   https://cdn-icons-png.flaticon.com/512/3177/3177407.png " width="40" height="40" alt="" title=""
+                class="img-small"></h5></a>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'login' %}"><h5 class="fw-bold  ">Вход <img
+                src="   https://cdn-icons-png.flaticon.com/512/5977/5977778.png " width="40" height="40" alt="" title=""
+                class="img-small"></h5></a>
+
+    </nav>
+</div>
+
+<div class="container">
+    <h1 class="text-center">Квадратные уравнения</h1>
+    <p class="p-2 fs-5">
+        Квадратное уравнение – уравнение вида <img
+            src="https://l.wordpress.com/latex.php?latex=ax%5E%7B2%7D%2Bbx%2Bc%3D0&amp;bg=FFFFFF&amp;fg=000000&amp;s=1"
+            title="ax^{2}+bx+c=0" class="tex" alt="ax^{2}+bx+c=0">, где <img
+            src="https://l.wordpress.com/latex.php?latex=a%5Cneq%200.&amp;bg=FFFFFF&amp;fg=000000&amp;s=1"
+            title="a\neq 0." class="tex" alt="a\neq 0.">
+        <br>
+        Числа <img src="https://l.wordpress.com/latex.php?latex=a%2Cb%2Cc&amp;bg=FFFFFF&amp;fg=000000&amp;s=1"
+                   title="a,b,c" class="tex" alt="a,b,c"> называются коэффициентами квадратного уравнения
+        <br> Квадратное уравнение может иметь два действительных корня, один действительный корень или ни одного. <br>
+        Количество корней квадратного уравнения зависит от знака выражения, которое называется дискриминант.
+        <br> Дискриминант квадратного уравнения: <img
+            src="https://l.wordpress.com/latex.php?latex=D%3Db%5E%7B2%7D-4ac&amp;bg=FFFFFF&amp;fg=000000&amp;s=1"
+            title="D=b^{2}-4ac" class="tex" alt="D=b^{2}-4ac">
+        <br> Если D > 0, квадратное уравнение имеет два корня: <img
+            src="https://l.wordpress.com/latex.php?latex=%5Cdisplaystyle%20x_%7B1%7D%3D%5Cfrac%7B-b%2B%5Csqrt%7BD%7D%7D%7B2a%7D&amp;bg=FFFFFF&amp;fg=000000&amp;s=1"
+            title="\displaystyle x_{1}=\frac{-b+\sqrt{D}}{2a}" class="tex"
+            alt="\displaystyle x_{1}=\frac{-b+\sqrt{D}}{2a}"> и <img
+            src="https://l.wordpress.com/latex.php?latex=x_%7B2%7D%3D%5Cfrac%7B-b-%5Csqrt%7BD%7D%7D%7B2a%7D&amp;bg=FFFFFF&amp;fg=000000&amp;s=1"
+            title="x_{2}=\frac{-b-\sqrt{D}}{2a}" class="tex" alt="x_{2}=\frac{-b-\sqrt{D}}{2a}">
+        Если D = 0, квадратное уравнение имеет единственный корень <img
+            src="https://l.wordpress.com/latex.php?latex=%5Cdisplaystyle%20x%3D-%5Cfrac%7Bb%7D%7B2a%7D&amp;bg=FFFFFF&amp;fg=000000&amp;s=1"
+            title="\displaystyle x=-\frac{b}{2a}" class="tex" alt="\displaystyle x=-\frac{b}{2a}">
+        <br> Если D < 0, квадратное уравнение не имеет действительных корней. <br> Чтобы решать квадратные уравнения,
+        надо уметь: <br> Правильно определять коэффициенты квадратного уравнения.
+        <br> Находить дискриминант и определять количество корней. <br> Находить корни уравнения по формуле. <br>
+        <br>
+        <img src="https://cdn-user84060.skyeng.ru/uploads/5fc0ea2fa1e40157157042.png" width="800" height="1000" ssmarticle="">
+        <br> <br>
+        Определим коэффициенты в следующих квадратных уравнениях.
+        <br> 1)<img
+            src="https://l.wordpress.com/latex.php?latex=3x%5E%7B2%7D-5x%2B1%3D0.&amp;bg=FFFFFF&amp;fg=000000&amp;s=1"
+            title="3x^{2}-5x+1=0." class="tex" alt="3x^{2}-5x+1=0."><br> Коэффициентом является числа:<img
+            src="https://l.wordpress.com/latex.php?latex=a%3D3%2C%20b%3D-5%2C%20c%3D1&amp;bg=FFFFFF&amp;fg=000000&amp;s=1"
+            title="a=3, b=-5, c=1" class="tex" alt="a=3, b=-5, c=1"> <br> 2) <img
+            src="https://l.wordpress.com/latex.php?latex=x%5E%7B2%7D-x-%5Csqrt%7B3%7D%3D0.&amp;bg=FFFFFF&amp;fg=000000&amp;s=1"
+            title="x^{2}-x-\sqrt{3}=0." class="tex" alt="x^{2}-x-\sqrt{3}=0.">
+        <br> В этом уравнении коэффициенты – это числа:<img
+            src="https://l.wordpress.com/latex.php?latex=a%3D1%2C%20b%3D-1%2C%20c%3D-%5Csqrt%7B3%7D.&amp;bg=FFFFFF&amp;fg=000000&amp;s=1"
+            title="a=1, b=-1, c=-\sqrt{3}." class="tex" alt="a=1, b=-1, c=-\sqrt{3}.">
+        Квадратные уравнения вида <img
+            src="https://l.wordpress.com/latex.php?latex=x%5E%7B2%7D%2Bbx%2Bc%3D0&amp;bg=FFFFFF&amp;fg=000000&amp;s=1"
+            title="x^{2}+bx+c=0" class="tex" alt="x^{2}+bx+c=0"> , в которых коэффициент<img
+            src="https://l.wordpress.com/latex.php?latex=a%3D1&amp;bg=FFFFFF&amp;fg=000000&amp;s=1" title="a=1"
+            class="tex" alt="a=1">, называются приведенными. <br> Пример решения квадратного уравнения <img src="https://l.wordpress.com/latex.php?latex=2x%5E%7B2%7D-3x-20%3D0.&amp;bg=FFFFFF&amp;fg=000000&amp;s=1" title="2x^{2}-3x-20=0." class="tex" alt="2x^{2}-3x-20=0.">
+        <br> Решение <br> Дискриминант уравнения равен  <img src="https://l.wordpress.com/latex.php?latex=%5Cleft%20%28%20-3%20%5Cright%20%29%5E%7B2%7D-4%5Ccdot%202%5Ccdot%20%5Cleft%20%28%20-20%20%5Cright%20%29%3D9%2B160%3D169&amp;bg=FFFFFF&amp;fg=000000&amp;s=1" title="\left ( -3 \right )^{2}-4\cdot 2\cdot \left ( -20 \right )=9+160=169" class="tex" alt="\left ( -3 \right )^{2}-4\cdot 2\cdot \left ( -20 \right )=9+160=169">
+        <br>  Уравнение имеет два корня. <br> Корни уравнения: <img src="https://l.wordpress.com/latex.php?latex=%5Cdisplaystyle%20x_%7B1%7D%3D%5Cfrac%7B-b%2B%5Csqrt%7BD%7D%7D%7B2a%7D%3D%5Cfrac%7B3%2B13%7D%7B4%7D%3D4%3B&amp;bg=FFFFFF&amp;fg=000000&amp;s=1" title="\displaystyle x_{1}=\frac{-b+\sqrt{D}}{2a}=\frac{3+13}{4}=4;" class="tex" alt="\displaystyle x_{1}=\frac{-b+\sqrt{D}}{2a}=\frac{3+13}{4}=4;">
+        <br> <img src="https://l.wordpress.com/latex.php?latex=%5Cdisplaystyle%20x_%7B2%7D%3D%5Cfrac%7B-b-%5Csqrt%7BD%7D%7D%7B2a%7D%3D%5Cfrac%7B3-13%7D%7B4%7D%3D-2%2C5.&amp;bg=FFFFFF&amp;fg=000000&amp;s=1" title="\displaystyle x_{2}=\frac{-b-\sqrt{D}}{2a}=\frac{3-13}{4}=-2,5." class="tex" alt="\displaystyle x_{2}=\frac{-b-\sqrt{D}}{2a}=\frac{3-13}{4}=-2,5.">
+        <br> Теорема Виета <br>  Полезная теорема для решения квадратных уравнений – теорема Виета. <br> Если <img src="https://l.wordpress.com/latex.php?latex=x_%7B1%7D&amp;bg=FFFFFF&amp;fg=000000&amp;s=1" title="x_{1}" class="tex" alt="x_{1}">, <img src="https://l.wordpress.com/latex.php?latex=x_%7B2%7D&amp;bg=FFFFFF&amp;fg=000000&amp;s=1" title="x_{2}" class="tex" alt="x_{2}"> - корни уравнения<img src="https://l.wordpress.com/latex.php?latex=ax%5E%7B2%7D%2Bbx%2Bc%3D0&amp;bg=FFFFFF&amp;fg=000000&amp;s=1" title="ax^{2}+bx+c=0" class="tex" alt="ax^{2}+bx+c=0">, то <img src="https://l.wordpress.com/latex.php?latex=%5Cdisplaystyle%20x_%7B1%7D%2Bx_%7B2%7D%3D-%5Cfrac%7Bb%7D%7Ba%7D&amp;bg=FFFFFF&amp;fg=000000&amp;s=1" title="\displaystyle x_{1}+x_{2}=-\frac{b}{a}" class="tex" alt="\displaystyle x_{1}+x_{2}=-\frac{b}{a}"> <img src="https://l.wordpress.com/latex.php?latex=%5Cdisplaystyle%20x_%7B1%7Dx_%7B2%7D%3D%5Cfrac%7Bc%7D%7Ba%7D&amp;bg=FFFFFF&amp;fg=000000&amp;s=1" title="\displaystyle x_{1}x_{2}=\frac{c}{a}" class="tex" alt="\displaystyle x_{1}x_{2}=\frac{c}{a}">
+        <br> Теорему Виета удобно использовать, когда коэффициент при <img src="https://l.wordpress.com/latex.php?latex=x%5E%7B2%7D&amp;bg=FFFFFF&amp;fg=000000&amp;s=1" title="x^{2}" class="tex" alt="x^{2}"> равен 1, то есть квадратное уравнение приведенное.
+        <br> Например <img src="https://l.wordpress.com/latex.php?latex=x%5E%7B2%7D-5x%2B6%3D0.&amp;bg=FFFFFF&amp;fg=000000&amp;s=1" title="x^{2}-5x+6=0." class="tex" alt="x^{2}-5x+6=0."> Коэффициенты этого уравнения <img src="https://l.wordpress.com/latex.php?latex=a%20%3D%201%2C%20b%20%3D%20-5%2C%20c%20%3D%206&amp;bg=FFFFFF&amp;fg=000000&amp;s=1" title="a = 1, b = -5, c = 6" class="tex" alt="a = 1, b = -5, c = 6"> Значит, сумма корней равна 5, а произведение корней равно 6.
+        <br>Эти два числа подобрать нетрудно, потому что <img src="https://l.wordpress.com/latex.php?latex=2%2B3%3D5%2C%202%5Ccdot%203%3D6.&amp;bg=FFFFFF&amp;fg=000000&amp;s=1" title="2+3=5, 2\cdot 3=6." class="tex" alt="2+3=5, 2\cdot 3=6.">
+        <br> <img src="https://l.wordpress.com/latex.php?latex=x_%7B1%7D%3D2%2C%20x_%7B2%7D%3D3.&amp;bg=FFFFFF&amp;fg=000000&amp;s=1" title="x_{1}=2, x_{2}=3." class="tex" alt="x_{1}=2, x_{2}=3.">
+         Решение неполных квадратных уравнений
+Как мы уже знаем, есть три вида неполных квадратных уравнений:
+
+ax² = 0, ему отвечают коэффициенты b = 0 и c = 0;
+ax² + c = 0, при b = 0;
+ax² + bx = 0, при c = 0.
+Давайте рассмотрим по шагам, как решать неполные квадратные уравнения по видам.
+
+Как решить уравнение ax² = 0
+Начнем с решения неполных квадратных уравнений, в которых b и c равны нулю, то есть, с уравнений вида ax² = 0.
+
+Уравнение ax² = 0 равносильно x² = 0. Такое преобразование возможно, когда мы разделили обе части на некое число a, которое не равно нулю. Корнем уравнения x² = 0 является нуль, так как 0² = 0. Других корней у этого уравнения нет, что подтверждают свойства степеней.
+
+Таким образом, неполное квадратное уравнение ax²²= 0 имеет единственный корень x = 0.
+
+Пример 1. Решить −6x² = 0.
+
+Как решаем:
+
+Замечаем, что данному уравнению равносильно x² = 0, значит исходное уравнение имеет единственный корень — нуль.
+По шагам решение выглядит так:
+−6x² = 0
+
+x² = 0
+
+x = √0
+
+x = 0
+
+Ответ: 0.
+
+Как решить уравнение ax² + с = 0
+Обратим внимание на неполные квадратные уравнения вида ax² + c = 0, в которых b = 0, c ≠ 0. Мы давно знаем, что слагаемые в уравнениях носят двусторонние куртки: когда мы переносим их из одной части уравнения в другую, они надевает куртку на другую сторону — меняют знак на противоположный.
+
+Еще мы знаем, что если обе части уравнения поделить на одно и то же число (кроме нуля) — у нас получится равносильное уравнение. Ну есть одно и то же, только с другими цифрами.
+
+Держим все это в голове и колдуем над неполным квадратным уравнением (производим «равносильные преобразования»): ax² + c = 0:
+
+перенесем c в правую часть: ax² = - c,
+разделим обе части на a: x² = - c/а.
+Ну все, теперь мы готовы к выводам о корнях неполного квадратного уравнения. В зависимости от значений a и c, выражение — c/а может быть отрицательным или положительным. Разберем конкретные случаи.
+
+Если — c/а < 0, то уравнение x²= - c/а не имеет корней. Все потому, что квадрат любого числа всегда равен неотрицательному числу. Из этого следует, что при — c/а < 0 ни для какого числа p равенство р² = - c/а не является верным.
+
+Если — c/а > 0, то корни уравнения x² = - c/а будут другими. Например, можно использовать правило квадратного корня и тогда корень уравнения равен числу √- c/а, так как (√- c/а)² = - c/а. Кроме того, корнем уравнения может стать -√- c/а, так как (-√- c/а)² = - c/а. Ура, больше у этого уравнения нет корней.
+
+
+
+    </p>
+
+
+</div>
